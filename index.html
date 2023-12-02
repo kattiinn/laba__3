@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px black;
+
+}
+header .logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    transition: .5s ;
+}
+header .logo:hover {
+    transform: scale(1.2);
+
+}
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px ;
+    color: black;
+    font-size: 16px;
+    display: block;
+
+}
+header nav ul li a:hover {
+    background: black;
+    color: aliceblue;
+
+}
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1) ;
+}
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+nav ul li:hover > ul{
+    display: initial;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&family=Sometype+Mono&display=swap');
+p {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 30px;
+    color: #dac5c5;
+}
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    background :url(stule/images/ac77fd1f75220030e1317de34555320c.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 60px;
+}
+.text {
+max-width: 450px; /* Максимальна ширина рядка тексту */
+text-align: center;
+color: #1a0202;
+}
+.container1 {
+display: flex;
+justify-content: center;
+}
+.fixed-text {
+font-family:"" ;
+color: blue;
+position: fixed;
+bottom:  0; 
+left: 0; /* Розташовуємо текст у лівому кутку */
+padding: 2px; /* Відступи від краю */
+font-size: 20px;
+font-weight: bold;
+opacity: 0.7; /* Значення 0.5 робить текст наполовину прозорим */
+}
+#link-up{
+    color: rgb(226, 220, 43);
+}
+
+#link-up:hover{
+    color: rgb(255, 34, 0);
+}
+input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+          }
+
+    </style>
+</head>
+<body>
+    <header >
+        <a href="#" class="logo">Bookstep</a>
+        <input placeholder="&#128269;Search..." id="HGYGY" name="THTH6" type="text">
+        <nav>
+            <ul>
+                <li><a href="#"> Хто ми  &#8595; </a> 
+                    <ul>
+                        <li><a href="index.html">Про нас" </a></li>
+                        <li><a href="reading.html"> Чому важливо читати  </a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="best.html"> Бестцеллери  </a></li>
+                <li><a href="ukraine.html"> Українська література</a></li>
+                <li><a href="clasik.html">Класика</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container1">
+        <p class="text">
+            Якщо ви любите читати книги, але не хочете витрачати час і гроші на пошук і доставку, то у нас є для вас ідеальне рішення. Ми -  <br> <b>Bookstep</b> <br>- сучасний молодіжний стартап, що пропонує вам найкращий вибір книг у всіх жанрах і мовах. У нас ви можете знайти книги від класики до сучасної літератури, від фантастики до наукової популяризації, від поезії до бізнесу. А ще ви можете купувати книги не тільки за гроші, а й за бали, які ви заробляєте за читання, відгуки, рекомендації і участь у конкурсах. Так ви не тільки отримуєте задоволення від читання, а й економите свій бюджет.
+
+            Bookster - це не просто інтернет-магазин книг, а й спільнота любителів читання, де ви можете спілкуватися з іншими читачами, обмінюватися думками, ділитися враженнями, отримувати поради і рекомендації. Ви також можете створювати свої власні списки книг, які ви хочете прочитати, або які ви вже прочитали, і бачити, що читають інші. Bookster - це місце, де ви можете знайти своїх друзів по перу і по духу.
+
+            Не зволікайте, приєднуйтеся до Bookster зараз і отримайте свою першу книгу безкоштовно. Все, що вам потрібно, це зареєструватися на нашому сайті [тут] і вибрати книгу з нашого каталогу. Ми доставимо її вам у найкоротший термін і без жодних додаткових витрат. Bookster - це ваш надійний партнер у світі книг. З
+        </p>
+    </div>
+    <p class="fixed-text" ><a id="link-up" href="#top"> НА ВЕРХ</a></p>
+</body>
+</html>

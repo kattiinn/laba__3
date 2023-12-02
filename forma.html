@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+/* Стиль для всієї сторінки */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Стиль для рамки форми */
+.form-box {
+  width: 600px;
+  margin: 50px auto;
+  border: 2px solid #333;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+/* Стиль для заголовка форми */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Стиль для підзаголовка форми */
+.form-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Стиль для міток полів форми */
+.form-label {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Стиль для полів введення форми */
+.form-input {
+  font-size: 16px;
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+/* Стиль для списку книг */
+.form-select {
+  font-size: 16px;
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+/* Стиль для кнопки відправлення форми */
+.form-submit {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стиль для кнопки відправлення форми при наведенні миші */
+.form-submit:hover {
+  background-color: #666;
+}
+</style>
+</head>
+<body>
+<!-- Рамка форми -->
+<div class="form-box">
+  <!-- Заголовок форми -->
+  <h1 class="form-title">Форма покупки книги</h1>
+  <!-- Підзаголовок форми -->
+  <p class="form-subtitle">Будь ласка, заповніть наступні поля, щоб замовити книгу на нашому сайті.</p>
+  <!-- Форма -->
+  <form>
+    <!-- Поле для введення імені -->
+    <label for="name" class="form-label">Ваше ім'я</label>
+    <input type="text" name="name" id="name" class="form-input" required>
+    <!-- Поле для введення електронної пошти -->
+    <label for="email" class="form-label">Ваша електронна пошта</label>
+    <input type="email" name="email" id="email" class="form-input" required>
+    <!-- Поле для вибору книги -->
+    <label for="book" class="form-label">Виберіть книгу</label>
+    <select name="book" id="book" class="form-select" required>
+      <option value="">--Будь ласка, виберіть книгу--</option>
+      <option value="book1">Людина яка сміється  </option>
+      <option value="book2">Пригоди Олівера Твіста</option>
+      <option value="book3">Біле ікло </option>
+      <option value="book3">Гобсек </option>
+    </select>
+    <!-- Кнопка відправлення форми -->
+    <input type="submit" value="Замовити" class="form-submit">
+</form>
+<a href="index.html"><button class="form-submit" >Назад</button></a>
+</div>
+</body>
+</html>
